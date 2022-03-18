@@ -7,23 +7,22 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 100px;
-			height: 100px;
+			width: 70px;
+			height: 70px;
 			background-color: purple;
 			font-size: 300%;
 			text-align: center;
 			display: block;
 			position: absolute;
-			top: 200px;
-			left: 50px;
+			top: 21px;
+			left: 0px;
 			/* <--- Change me! */
 
 		}
 
 		.board {
-
 			height: 100vh;
-			background-color: black;
+
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -56,7 +55,7 @@
 			// moves the Box to a new position on the screen along the X-Axis
 			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
-				moveBoxTo(newPositionX)
+
 			}
 			function update() {
 				moveBoxTo(100);
